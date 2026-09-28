@@ -1,0 +1,285 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+#navbar a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+#navbar a:hover{
+    color: lightgreen;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* click on the text it will be underline */
+
+}
+
+/* About Section*/
+#about{
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8KEvZBommXHOlq3sxEyX4D7ndK5VIUzh0flKiHiYDQ&s=10");
+    background-repeat: None;
+    width:100vw;
+    height:90vh;
+    background-size:cover;
+}
+.aboutleft{
+    width:50%;
+    padding:50px;
+}
+.aboutright{
+    width:50%;
+    padding:5px 100px;
+}
+.aboutleft h1{
+    margin-bottom:20px;
+    color: white;
+}
+.aboutleft h2{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.aboutleft p{
+    margin-bottom: 20px;
+    color: white;
+}
+.aboutbtns button{
+    background-color: rgb(15, 170, 222);
+    padding:10px;
+    font-weight:bold;
+    border:none;
+}
+.aboutbtns button:hover{
+    background-color: white;
+    border:2px solid black;
+}
+.section2{
+    text-align: center;
+    margin: 20px 0px;
+}
+#acheivements{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    width:20%;
+    border:0.6px solid gray;
+    margin:20px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px gray;
+}
+/* Project section */
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.card1{
+    width: 400px;
+    height: 400px;
+    box-shadow: -2px -3px 10px black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+
+}
+.card1 img{
+    width: 75%;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+#h3{
+    margin-top: 20px;
+}
+
+.card1 a{
+
+    background-color: rgb(50, 214, 17);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+
+.card1 a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* Education section */
+#education{
+    text-align: center;
+    background-color: black;
+    height: 130px;
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.tablecontent{
+    width: 100%;
+    text-align: center;
+    border:1px solid white;
+    color:white;
+}
+
+th,td{
+    padding: 20px;
+}
+
+th{
+    color: rgb(210, 81, 12);
+}
+
+/* Contact details */
+#contactform{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    padding: 50px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+}
+
+#contactform label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#contactform input{
+    padding: 10px;
+}
+
+#contactform textarea{
+    padding: 30px;
+}
+
+#contactform button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#contact iframe{
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.location{
+    margin-top: 60px;
+    
+}
+/*Declaration*/
+ #declare{
+    padding: 10px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+#declare h1{
+    color: white;
+}
+
+#declare p{
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    /* background-color: gold; */
+}
+
+/* Footer */
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items :center;
+    background-color: rgb(11, 172, 35);
+    padding: 20px 20px;
+    margin-top: 30px;
+}
+
+#footer p{
+    margin-left: 500px;
+    font-size: large;
+}
+
+.img1 img{
+    margin-left: 400px;
+}
+
+.img1 img:hover{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.img2 img:hover{
+    background-color: blue;
+    border-radius: 25px;
+}
+
+@media all and (max-width:576px) {
+    #navbar {
+        background-color:rgb(65, 7, 118);
+    }
+}
+
+@media all and (min-width:576px) and (max-width:768px) {
+    #navbar {
+        background-color:rgb(3, 96, 99);
+    }
+}
+
+@media all and (min-width:768px) and (max-width:992px) {
+    #navbar {
+        background-color:rgb(132, 110, 10);
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1200px) {
+    #navbar {
+        background-color:rgb(44, 8, 149);
+    }
+}
+@media all and (min-width:1200px) {
+    #navbar {
+        background-color:rgb(21, 1, 8);
+    }
+}
